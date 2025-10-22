@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tentang Saya - Moch Iqwan Ma'ruf</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #89f7fe 0%, #66a6ff 100%);
+      margin: 0; padding: 20px;
+      display: flex; justify-content: center; align-items: center; height: 100vh;
+    }
+    .kartu-profil {
+      background-color: #fff;
+      width: 420px;
+      border-radius: 15px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+      padding: 20px;
+      text-align: center;
+      animation: fadeInScale 0.8s ease forwards;
+    }
+    @keyframes fadeInScale {
+      0% { opacity: 0; transform: scale(0.8); }
+      100% { opacity: 1; transform: scale(1); }
+    }
+    .foto-container {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      margin-bottom: 15px;
+    }
+    .foto-container img {
+      width: 90px; height: 90px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid #66a6ff;
+      cursor: pointer;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .foto-container img:hover {
+      transform: scale(1.15);
+      box-shadow: 0 0 20px #66a6ff;
+    }
+    h1 {
+      margin: 10px 0 5px;
+      color: #323232;
+      font-size: 24px;
+    }
+    p {
+      font-size: 14px;
+      color: #555;
+      margin: 5px 0 20px;
+      line-height: 1.5;
+    }
+    a {
+      display: inline-block;
+      margin-bottom: 20px;
+      text-decoration: none;
+      color: white;
+      background-color: #0077b6;
+      padding: 10px 18px;
+      border-radius: 8px;
+      font-weight: 600;
+      transition: background-color 0.3s;
+    }
+    a:hover {
+      background-color: #023e8a;
+    }
+    button#sapaButton {
+      padding: 12px 25px;
+      border: none;
+      background-color: #00b4d8;
+      color: white;
+      font-size: 16px;
+      font-weight: 700;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s, transform 0.2s;
+    }
+    button#sapaButton:hover {
+      background-color: #0077b6;
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+  <div class="kartu-profil" role="region" aria-label="Kartu profil pengguna">
+    <div class="foto-container">
+      <img src="foto-profil.jpg" alt="Foto profil depan" tabindex="0" />
+      <img src="foto-profil-2.jpg" alt="Foto profil samping" tabindex="0" />
+    </div>
+    <h1>MOCH IQWAN MA'RUF</h1>
+    <p>
+      Siswa SMA yang tertarik dengan teknologi dan desain.<br />
+      Selamat datang di website pertama saya!
+    </p>
+    <a href="https://www.instagram.com/23cigarettes" target="_blank" rel="noopener noreferrer" aria-label="Kunjungi Instagram Saya">
+      Kunjungi Instagram Saya
+    </a>
+    <br />
+    <button id="sapaButton" aria-label="Tombol untuk menyapa pengguna">Sapa Saya!</button>
+  </div>
+
+  <script>
